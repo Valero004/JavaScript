@@ -1,4 +1,4 @@
-/*
+
 let variable = 4;
 alert(`Esto es un ejemplo de alert, el valor de la variable es ${variable}`);
 let nombre = prompt("Dime como te llamas");
@@ -13,8 +13,7 @@ if(usuario == 'admin' && pasword == 'admin'){
 }else{
     alert(`el usuario ${usuario} con contraseña ${pasword} no existe`);
 }
-*/
-/*
+
 //se piden dos numeros por promt y se muestra en un alert todos los resultados , siempre y cuando ambos numeros sean positivos
 o1 = Number(prompt("Primer operador"));
 o2 = Number(prompt("Segundo operador"));
@@ -33,8 +32,11 @@ if ((o1 >= 0 && !isNaN(o1)) && (o2 >= 0 && !isNaN(o2))) {
 } else {
   alert("Valores no válidos\nRecuerda que los dos operadores deben ser numeros positivos" );
 }
-*/
+
 n1 = 6;
 n2 = 7;
 let  comparacion = n1 >= n2;
 let comparacionIgualdad = n1 == n2; 
+/*
+un igual para igualar, dos iguales para comparar los caracteres y tres iguales para comparar caracteres y tipo
+*/
