@@ -46,16 +46,22 @@ do{
 alert(`Enhorabuena has adivinado el numero\nIntentos: ${intentos}`);
 */
 
-let coleccion = ['uno','dos','tres','cuatro','cinco','seis']
-coleccion.forEach((element) => {console.log(element)});
+// let coleccion = ['uno','dos','tres','cuatro','cinco','seis']
+// coleccion.forEach((element) => {console.log(element)});
 
 
-for (const key in object) {
-    if (Object.hasOwnProperty.call(object, key)) {
-        const element = object[key];
+// for (const key in object) {
+//     if (Object.hasOwnProperty.call(object, key)) {
+//         const element = object[key];
         
-    }
-}
-for (const iterator of object) {
+//     }
+// }
+// for (const iterator of object) {
     
+// }
+let confirmacion= confirm('Estas seguro que quieres continuar')
+if(confirmacion){
+    alert('terminos aceptados')
+}else{
+    alert('proceso cancelado')    
 }
