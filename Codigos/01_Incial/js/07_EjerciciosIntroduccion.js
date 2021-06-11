@@ -98,27 +98,42 @@
 //   alert("Error");
 // }
 
-//EJERCICIO 10
-alert("Ejercicio 10.");
-let confirmacion = false;
-let solucion = 0;
-do {
-  let n1 = prompt("Introduce el primer operador");
-  let n2 = prompt("Introduce el primer operador");
-  if (!isNaN(n1) && n1>0 && !isNaN(n2) && n2>0) {
-    suma = n1+n2;
-    alert(`Suma ${n1} + ${n2} = ${suma}`);
-    resta = n1-n2;
-    alert(`Resta ${n1} - ${n2} = ${resta}`);
-    multiplicacion = n1*n2;
-    alert(`Multiplicación ${n1} * ${n2} = ${multiplicacion}`);
-    division = n1/n2;
-    alert(`División ${n1} / ${n2} = ${division}`);
-    resto = n1%n2;
-    alert(`Resto ${n1} % ${n2} = ${resto}`);
-  }
+// //EJERCICIO 10
+// alert("Ejercicio 10.");
+// let confirmacion = false;
+// let solucion = 0;
+// do {
+//   let n1 = prompt("Introduce el primer operador");
+//   let n2 = prompt("Introduce el primer operador");
+//   if (!isNaN(n1) && n1>0 && !isNaN(n2) && n2>0) {
+//     suma = n1+n2;
+//     alert(`Suma ${n1} + ${n2} = ${suma}`);
+//     resta = n1-n2;
+//     alert(`Resta ${n1} - ${n2} = ${resta}`);
+//     multiplicacion = n1*n2;
+//     alert(`Multiplicación ${n1} * ${n2} = ${multiplicacion}`);
+//     division = n1/n2;
+//     alert(`División ${n1} / ${n2} = ${division}`);
+//     resto = n1%n2;
+//     alert(`Resto ${n1} % ${n2} = ${resto}`);
+//   }
 
-} while (!confirmacion);
+// } while (!confirmacion);
 
 // //EJERCICIO 11
 // alert("Ejercicio 11.");
+
+// //EJERCICIO 12
+// alert("Ejercicio 12.");
+// let frase = prompt('Introduce la frase que quieras analizar');
+// if (frase.length<10) {
+//     frase = prompt('Introduce la frase que quieras analizar');
+// }else{
+//     let palabras = frase.replace('.',' ').replace(',',' ').split(' ');
+//     let contador = 0;
+//     let letras = palabras.forEach((item) => {
+//         contador += item.length;
+//     });
+//     let frases = frase.split('.').length;
+//     console.log(`La frase tiene ${contador} letras, ${palabras.length} palabras y ${frases} frases.`);
+// }
