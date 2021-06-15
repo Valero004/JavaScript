@@ -22,10 +22,30 @@
 // }
 // funcionParametrosDefecto('uno','tres');
 
-let funcionSuma = function (numeroUno,numeroDos) {
-    console.log(`${numeroUno+numeroDos}`);
-}
-funcionSuma(4,4);
+// let funcionSuma = function (numeroUno,numeroDos) {
+//     console.log(`${numeroUno+numeroDos}`);
+// }
+// funcionSuma(4,4);
 
-let funcionDivision = (numeroUno, numeroDos)=>console.log(numeroUno/numeroDos);
-funcionDivision(8,2)
+// let funcionDivision = (numeroUno, numeroDos)=>console.log(numeroUno/numeroDos);
+// funcionDivision(8,2);
+
+function mostrarMensaje(parametro) {
+    console.log(`Esto es una funcion que muestra un mensaje y el parametro es este ${parametro}`);
+}
+function funcionCompleta(funcion, nombre) {
+    funcion(nombre)
+}
+//funcionCompleta(mostrarMensaje,"paco");
+funcionCompleta((nombre)=>{console.log(`Esta funcion ejecuta cosas de ${nombre}`);}, 'Ana')
+
+// function asincroniaInterval() {
+//     setInterval(() => console.log('funcion interval'), 5000);
+// }
+// asincroniaInterval();
+function asincroniaTimeout(){
+    setTimeout(() => {
+        console.log('funcion timeout');
+    }, 300);
+}
+asincroniaTimeout();
