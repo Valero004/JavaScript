@@ -18,12 +18,12 @@ console.log('inicio busquedas js');
 // let elemento = document.querySelector('exampleInputNombre');
 // console.log(elemento);
 
-function botonFormpulsado(nombre, apellido, edad){
-    console.log('Boton pulsado');
-    if (nombre != ''&& apellido !='' && edad !='') {
-        alert(`${nombre} ${apellido}, ${edad} años`)
-    }else{
-        alert('Debes rellenar todos los campos')
-    }
+// function botonFormpulsado(nombre, apellido, edad){
+//     console.log('Boton pulsado');
+//     if (nombre != ''&& apellido !='' && edad !='') {
+//         alert(`${nombre} ${apellido}, ${edad} años`)
+//     }else{
+//         alert('Debes rellenar todos los campos')
+//     }
 
-}
+// }
