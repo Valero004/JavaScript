@@ -2,3 +2,9 @@
 h2.mt-4 {
     text-align: center;
 }
+.con-experiencia{
+    color: rgb(38, 128, 20);
+}
+.sin-experiencia{
+    color: rgb(199, 42, 42);
+}
