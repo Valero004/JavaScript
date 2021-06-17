@@ -122,7 +122,7 @@ id++;
 
   let tr = document.createElement("tr");
   if (experiencia) {
-    tr.className = "table-success";
+    tr.className = "table-info";
   } else {
     tr.className = "table-danger";
   }
