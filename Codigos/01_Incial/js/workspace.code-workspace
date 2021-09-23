@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\02_Dom"
+		},
+		{
+			"path": "..\\..\\03_Promesas"
+		}
+	],
+	"settings": {}
+}

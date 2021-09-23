@@ -14,6 +14,7 @@ let elemento = document.querySelector(".form-control");
 
 // let buttonForm = document.querySelector("#botonMostrar");
 let buttonGuardar = document.querySelector("#botonGuardar");
+
 // buttonForm.addEventListener("click", (evento) => {
 //   //console.log(evento.target);
 //   let nombre = document.querySelector("#exampleInputNombre1").value;
@@ -111,22 +112,55 @@ let palabra = "";
 //     }
 //   });
 
+// let id = 1;
+// buttonGuardar.addEventListener("click", () => {
+// id++;
+//   let nombre = document.querySelector("#exampleInputNombre1").value;
+//   let apellido = document.querySelector("#exampleInputApellido1").value;
+//   let edad = document.querySelector("#exampleInputEdad1").value;
+//   let experiencia = document.querySelector("#exampleExperiencia1").checked;
+//   let lista = document.querySelector("tbody");
+
+//   let tr = document.createElement("tr");
+//   experiencia ? tr.className = "table-info" : tr.className = "table-danger";
+
+//   let th = document.createElement("th");
+//   let td1 = document.createElement("td");
+//   let td2 = document.createElement("td");
+//   let td3 = document.createElement("td");
+
+//   th.scope = "row";
+//   th.textContent = `${id}`;
+//   td1.textContent = `${nombre}`;
+//   td2.textContent = `${apellido}`;
+//   td3.textContent = `${edad}`;
+
+//   tr.appendChild(th);
+//   tr.appendChild(td1);
+//   tr.appendChild(td2);
+//   tr.appendChild(td3);
+//   lista.appendChild(tr);
+
+// });
+
 let id = 1;
 buttonGuardar.addEventListener("click", () => {
-id++;
+  id++;
   let nombre = document.querySelector("#exampleInputNombre1").value;
   let apellido = document.querySelector("#exampleInputApellido1").value;
   let edad = document.querySelector("#exampleInputEdad1").value;
   let experiencia = document.querySelector("#exampleExperiencia1").checked;
   let lista = document.querySelector("tbody");
-
   let tr = document.createElement("tr");
-  if (experiencia) {
-    tr.className = "table-info";
-  } else {
-    tr.className = "table-danger";
-  }
 
+  experiencia ? (tr.className = "table-info") : (tr.className = "table-danger");
+
+  tr.innerHTML = `  <th scope="row">${id}</th>
+                    <td>${nombre}</td>
+                    <td>${apellido}</td>
+                    <td>${edad}</td>`;
+  lista.appendChild(tr);
+  /*
   let th = document.createElement("th");
   let td1 = document.createElement("td");
   let td2 = document.createElement("td");
@@ -142,6 +176,18 @@ id++;
   tr.appendChild(td1);
   tr.appendChild(td2);
   tr.appendChild(td3);
-  lista.appendChild(tr);
-  
+  lista.appendChild(tr);*/
+});
+
+// let buttonBorrar = document.querySelector("#botonBorrar").addEventListener("click",()=>{
+//     let tabla = document.querySelector('table');
+//     document.querySelector('#contenidoUsuarios').removeChild(tabla);
+// });
+
+document.querySelector("#botonBorrar").addEventListener("click",()=>{
+    let nodos = document.querySelectorAll('.table-danger');
+    nodos.forEach(element => {
+         document.querySelector('tbody').removeChild(element);
+    });
+   
 });
